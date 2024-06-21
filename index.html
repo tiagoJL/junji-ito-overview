@@ -11,95 +11,90 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <header class="header">
-            <h1 class="header__title">Junji Ito Overview</h1>
+
+    <body class="primary-background-color">
+        <header class="header header-footer-background">
+            <h1 class="header__title">
+                <a class="header__title__anchor" href="./index.html">Junji Ito<br>Overview</a>
+            </h1>
+
             <ul class="header__menu">
-                <li class="header__menu__li"><a class="header__anchor" href="#">Biografia</a></li>
-                <li class="header__menu__li"><a class="header__anchor" href="#">Trabalhos</a></li>
-                <li class="header__menu__li"><a class="header__anchor" href="#">Adaptações</a></li>
+                <li class="header__menu__li"><a class="header__menu__anchor" href="#biografia">Biografia</a></li>
+                <li class="header__menu__li"><a class="header__menu__anchor" href="#trabalhos">Trabalhos</a></li>
+                <li class="header__menu__li"><a class="header__menu__anchor" href="#adaptacoes">Adaptações</a></li>
             </ul>
+
         </header>
         <main class="main">
-            <section class="main__section" aria-labelledby="biografia">
+            <section class="main__section primary-background-color" aria-labelledby="biografia">
+
                 <h2 class="main__title" id="biografia" aria-label="Biografia do Junji Ito">Biografia</h2>
-                <section class="main__subsection">
-                    <article class="main__subsection__card">
-                        <div class="main__subsection__wrapper_img">
-                            <img src="./production/static/img/junji_ito_perfil.jpeg" alt="foto de junji ito" width="250" height="350">
-                        </div>
-                        <dl>
-                            <dt>Nome completo:</dt>
-                            <dd>Junji Ito (伊藤 潤二)</dd>
+                
+                <div class="main__wrapper_img main__section__first_div">
+                    <img class="main__image" src="./production/static/img/junji_ito_perfil.jpeg" alt="foto de junji ito" width="250" height="350">
+                </div>
 
-                            <dt>Nascimento:</dt>
-                            <dd>31 de julho de 1963 (60 anos)</dd>
+                <div class="main__section__second_div">
 
-                            <dt>Local:</dt>
-                            <dd>Nakatsugawa, Gifu</dd>
+                    <section class="main__subsection">
 
-                            <dt>Nacionalidade:</dt>
-                            <dd>japonês(esa)</dd>
-                        </dl>
+                        <h3 class="main__subtitle">Junji Ito (伊藤 潤)</h3>
+                        <p class="main__common_text">
+                            Junji Ito é um renomado mangaká japonês conhecido por seu trabalho no gênero de horror. Nascido em 31 de julho de 1963 em Gifu, Japão, ele é aclamado por suas narrativas perturbadoras e estilo artístico único, que frequentemente apresentam imagens grotescas. 
+                        </p>
 
-                    </article>
-                    <h3 class="main__subtitle">Junji Ito (伊藤 潤)</h3>
-                    <p class="main__subsection_text">
-                        Junji Ito é um renomado mangaká japonês conhecido por seu trabalho no gênero de horror. Nascido em 31 de julho de 1963 em Gifu, Japão, ele é aclamado por suas narrativas perturbadoras e estilo artístico único, que frequentemente apresentam imagens grotescas. Suas obras são caracterizadas por uma atmosfera de suspense e terror psicológico. Algumas de suas obras mais conhecidas incluem "Uzumaki", "Gyo", "Tomie" e "The Enigma of Amigara Fault". Ao longo de sua carreira, Junji Ito tem sido uma figura influente no mundo do mangá, deixando um legado duradouro no gênero do horror.
-                    </p>
-                </section>
+                        <p class="main__common_text">
+                            Suas obras são caracterizadas por uma atmosfera de suspense e terror psicológico. Algumas de suas obras mais conhecidas incluem "Uzumaki", "Gyo", "Tomie" e "The Enigma of Amigara Fault". Ao longo de sua carreira, Junji Ito tem sido uma figura influente no mundo do mangá, deixando um legado duradouro no gênero do horror.
+                        </p>
 
+                    </section>
+                </div>
             </section>
 
-            <section class="main__section" aria-labelledby="trabalhos">
-                <h2 class="main__title" id="trabalhos" aria-label="Trabalhos do Junji Ito">Trabalhos</h2>
-                <section class="main__subsection">
-                    <input type="radio" class="main__subsection__input_decorative" id="uzumaki_work" value="uzumaki" name="input_decorative">
+            <section class="main__section secondery-background-color" aria-labelledby="trabalhos">
+                <h2 class="main__title center_grid" id="trabalhos" aria-label="Trabalhos do Junji Ito">Trabalhos</h2>
+                <section class="main__subsection center">
+                    <input type="radio" class="main__subsection__input_decorative" checked id="uzumaki_work" value="uzumaki" name="input_decorative">
                     <input type="radio" class="main__subsection__input_decorative" id="tomie_work" value="tomie" name="input_decorative">
                     <input type="radio" class="main__subsection__input_decorative" id="gyo_work" value="gyo" name="input_decorative">
 
                     <h3 class="main__subtitle">Principais Trabalhos:</h3>
-                    <ul>
-                        <li><label for="uzumaki_work">Uzumaki</label></li>
-                        <li><label for="tomie_work">Tomie</label></li>
-                        <li><label for="gyo_work">Gyo</label></li>
+                    <ul class="main__ul">
+                        <li><label  class="main__ul__label" for="uzumaki_work">Uzumaki</label></li>
+                        <li><label  class="main__ul__label" for="tomie_work">Tomie</label></li>
+                        <li><label  class="main__ul__label" for="gyo_work">Gyo</label></li>
                     </ul>
 
-                    <article class="main__subsection__description_work">
+                    <article class="main__subsection__description_work uzumaki_work">
                         
-                        <label class="description_work__label" for="uzumaki_work">
-                            <div class="description_work__wrapper_img">
-                                <img src="./production/static/img/uzumaki.jpeg" alt="foto de uma cena em uzumaki" width="350" height="370">
-                            </div>
-                        </label>
+                        <div class="description_work__wrapper_img">
+                            <img class="main__image" src="./production/static/img/uzumaki.jpeg" alt="foto de uma cena em uzumaki" width="350" height="370">
+                        </div>
 
-                        <p class="description_work__text">
+                        <p class="description_work__text main__common_text">
                             "Uzumaki" é uma história de horror que se passa em uma pequena cidade japonesa assombrada por uma maldição inexplicável relacionada a espirais. A trama segue o jovem casal Kirie Goshima e Shuichi Saito enquanto testemunham eventos cada vez mais bizarros e perturbadores que acontecem na cidade, à medida que os habitantes são consumidos pela obsessão e medo das espirais.
                         </p>
 
                     </article>
 
-                    <article class="main__subsection__description_work">
-                        <label for="tomie_work">
-                            <div class="description_work__wrapper_img">
-                                <img src="./production/static/img/tomie.jpeg" alt="foto de uma cena em tomie" width="350" height="370">
-                            </div>
-                        </label>
+                    <article class="main__subsection__description_work tomie_work">
+
+                        <div class="description_work__wrapper_img">
+                            <img class="main__image" src="./production/static/img/tomie.jpeg" alt="foto de uma cena em tomie" width="350" height="370">
+                        </div>
                         
-                        <p class="description_work__text">
+                        <p class="description_work__text main__common_text">
                             "Tomie" é uma série de histórias conectadas que giram em torno da personagem titular, Tomie, uma jovem sedutora e misteriosa que tem o poder de regenerar-se infinitamente mesmo após ser mutilada ou morta. Cada história apresenta encontros perturbadores com Tomie e as consequências horríveis que ela traz para aqueles que cruzam seu caminho.
                         </p>
 
                     </article>
 
-                    <article class="main__subsection__description_work">
-                        <label class="description_work__label" for="gyo_work">
-                            <div class="description_work__wrapper_img">
-                                <img src="./production/static/img/gyo.jpeg" alt="foto de uma cena em gyo" width="350" height="470">
-                            </div>
-                        </label>
+                    <article class="main__subsection__description_work gyo_work">
+                        <div class="description_work__wrapper_img">
+                            <img class="main__image" src="./production/static/img/gyo.jpeg" alt="foto de uma cena em gyo" width="350" height="470">
+                        </div>
 
-                        <p class="description_work__text">
+                        <p class="description_work__text main__common_text">
                             "Gyo" é uma história de horror que segue um casal, Tadashi e Kaori, enquanto eles tentam sobreviver a uma invasão grotesca e apocalíptica de criaturas marinhas mecânicas e infectadas por um odor terrível. Conforme as criaturas avançam pela terra, a origem sinistra por trás do evento é gradualmente revelada, levando Tadashi e Kaori a enfrentarem horrores além da compreensão.
                         </p>
                     </article>
@@ -107,38 +102,59 @@
                 </section>
             </section>
 
-            <section class="main__section" aria-labelledby="adaptacoes">
+            <section class="main__section primary-background-color" aria-labelledby="adaptacoes">
                 <h2 class="main__title" id="adaptacoes" aria-label="Adaptações do Junji Ito">Adaptações</h2>
-                <section class="main__subsection">
-                    <h3 class="main__subtitle">Principais Adaptações:</h3>
-                    <ul>
-                        <li>
-                            <div class="main__subsection__wrapper_img">
-                                <img src="./production/static/img/junji_ito_netflix.jpg" alt="foto de junji ito" width="350" height="370">
+                <section class="main__subsection center">
+                    <h3 class="main__subtitle center">Principais Adaptações:</h3>
+                    <ul class="main__subsection__ul">
+                        <li class="main__subsection__li">
+                            <div class="main__wrapper_img">
+                                <img class="main__image" src="./production/static/img/junji_ito_netflix.jpg" alt="foto de junji ito" width="350" height="370">
                             </div>
-                            <div></div>
-                            <h4>Histórias Macabras do Japão (2023)</h4>
-                            <p>Série da Netflix que reúne 20 contos adaptados de diversos mangás de Ito, como "Tomie", "Soichi" e "The Hanging Balloons".</p>
+                            <div class="wrapper__desc">
+                                <h4 class="wrapper__desc_title">Histórias Macabras do Japão (2023)</h4>
+                                <p class="main__common_text">Série da Netflix que reúne 20 contos adaptados de diversos mangás de Ito, como "Tomie", "Soichi" e "The Hanging Balloons".</p>
+                            </div>
                         </li>
-                        <li>
-                            <div class="main__subsection__wrapper_img">
-                                <img src="./production/static/img/uzumaki_filme.jpg" alt="foto de junji ito" width="350" height="370">
+                        <li class="main__subsection__li">
+                            <div class="main__wrapper_img">
+                                <img class="main__image" src="./production/static/img/uzumaki_filme.jpg" alt="foto de junji ito" width="350" height="370">
                             </div>
-                            <h4>Uzumaki (2000)</h4>
-                            <p>Filme live-action baseado no mangá de mesmo nome, que narra os eventos bizarros que se desenrolam em uma cidade amaldiçoada por uma espiral sinistra.</p>
+                            <div class="wrapper__desc">
+                                <h4 class="wrapper__desc_title">Uzumaki (2000)</h4>
+                                <p class="main__common_text">Filme live-action baseado no mangá de mesmo nome, que narra os eventos bizarros que se desenrolam em uma cidade amaldiçoada por uma espiral sinistra.</p>
+                            </div>
                         </li>
 
-                        <li>
-                            <div class="main__subsection__wrapper_img">
-                                <img src="./production/static/img/junji_ito_colection.jpg" alt="foto de junji ito" width="350" height="370">
+                        <li class="main__subsection__li">
+                            <div class="main__wrapper_img">
+                                <img class="main__image" src="./production/static/img/junji_ito_colection.jpg" alt="foto de junji ito" width="350" height="370">
                             </div>
-                            <h4>Junji Ito Collection (2018) - Anime</h4>
-                            <p>"Junji Ito Collection" é uma série de anime lançada em 2018, que adapta várias histórias curtas do autor. Cada episódio apresenta uma história diferente, oferecendo aos espectadores uma visão diversificada do mundo macabro de Junji Ito.</p>
+
+                            <div class="wrapper__desc">
+                                <h4 class="wrapper__desc_title">Junji Ito Collection (2018) - Anime</h4>
+                                <p class="main__common_text">"Junji Ito Collection" é uma série de anime lançada em 2018, que adapta várias histórias curtas do autor. Cada episódio apresenta uma história diferente, oferecendo aos espectadores uma visão diversificada do mundo macabro de Junji Ito.</p>
+                            </div>
                         </li>
                     </ul>
                 </section>
             </section>
         </main>
 
+        <script defer type="text/javascript">
+
+            function MenuAnchorSmoothScroll(event){
+                event.preventDefault();
+                const id = event.target.getAttribute("href")
+                const sectionTarget = document.querySelector(`.main__title${id}`)
+                sectionTarget.scrollIntoView({block: "start", behavior: "smooth"})
+            }
+
+            const menuAnchor = document.querySelectorAll(".header__menu__anchor")
+            menuAnchor.forEach(anchor => {
+                anchor.addEventListener("click", MenuAnchorSmoothScroll)
+            })
+            
+        </script>
     </body>
 </html>
