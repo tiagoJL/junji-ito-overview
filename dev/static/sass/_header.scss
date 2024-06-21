@@ -1,0 +1,61 @@
+.header {
+    position: sticky;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    border-top: $red 1rem solid;
+    z-index: 1000;
+
+    &__title {
+        position: relative;
+        height: 100px;
+        width: 100%;
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+    }
+
+    &__title__anchor {
+        position: absolute;
+        color: $color-title;
+    }
+
+    &__menu {
+        position: absolute;
+        grid-column: 3/4;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    &__menu__anchor {
+        font-size: 1.2rem;
+        font-weight: bold;
+        display: block;
+        position: relative;
+        padding: 10px;
+        transition-property: width color;
+        transition-duration: 0.5s;
+
+        &:hover {
+            color: $red;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            transition-duration: 0.5s;
+        }
+
+        &:hover::after {
+            color: $red;
+            background-color: $red;
+            height: 5px;
+            width: 70%;
+            left: 50%;
+            bottom: 0px;
+            transform: translateX(-50%);
+        }
+    }
+}

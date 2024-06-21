@@ -1,0 +1,114 @@
+.main {
+    &__section {
+        position: relative;
+        justify-content: center;
+        justify-items: start;
+        padding-bottom: 90px;
+        max-height: 70vh;
+        min-height: 600px;
+    }
+
+    &__section__first_div {
+        position: absolute;
+        grid-row: 2/-1;
+        grid-column: 2/3;
+        margin-top: 120px;
+    }
+
+    &__section__second_div {
+        position: absolute;
+        grid-row: 2-1;
+        grid-column: 3/4;
+        margin-top: 120px;
+    }
+
+    &__section[aria-labelledby="biografia"] {
+        grid-row: 1;
+        grid-column: 2/4;
+        margin-bottom: 120px;
+    }
+    
+    &__section[aria-labelledby="trabalhos"] {
+        grid-row: 2;
+        grid-column: 2/4;
+    }
+    
+    &__common_text {
+        color: $color-commom-text;
+        margin-bottom: 1rem;
+        font-size: 1.15rem;
+        max-width: 50ch;
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+    }
+
+    &__title {
+        scroll-margin-top: 175px;
+        grid-column: 2/4;
+        grid-row: 1/2;
+        color: $color-title;
+        margin-top: 60px;
+        font-size: 1.6rem;
+
+        .secondery-background-color & {
+            color: $color-title-in-secondary-background;
+        }
+
+        &.center_grid {
+            grid-column: 1/-1;
+            justify-self: center;
+        }
+    }
+
+    &__ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__ul__label {
+        padding: 10px 30px;
+        display: inline-block;
+        background-color: $black;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 3px solid transparent;
+    }
+
+    .uzumaki_work, .tomie_work, .gyo_work {
+        opacity: 0;
+        left: 0px;
+        transform: scale(0) translate(100%);
+        transition-duration: 0.7s;
+        transition-property: opacity transform;
+    }
+
+    #uzumaki_work:checked ~ .uzumaki_work {
+        opacity: 1;
+        transform: scale(1) translate(0);
+    }
+
+    #tomie_work:checked ~ .tomie_work {
+        opacity: 1;
+        transform: scale(1) translate(0);
+    }
+
+    #gyo_work:checked ~ .gyo_work {
+        opacity: 1;
+        transform: scale(1) translate(0);
+    }
+
+    #uzumaki_work:checked ~ &__ul &__ul__label[for="uzumaki_work"] {
+        border: 3px solid $white;
+    }
+
+    #tomie_work:checked ~ &__ul &__ul__label[for="tomie_work"] {
+        border: 3px solid $white;
+    }
+
+    #gyo_work:checked ~ &__ul &__ul__label[for="gyo_work"] {
+        border: 3px solid $white;
+    }
+}

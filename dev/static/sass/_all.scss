@@ -1,0 +1,5 @@
+.header, .main__section {
+    display: grid;
+    grid-template-columns: auto repeat(2, minmax(auto, 450px)) auto;
+    gap: 50px;
+}
