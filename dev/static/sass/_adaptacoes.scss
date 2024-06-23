@@ -2,18 +2,16 @@
 
     grid-row: 3;
     grid-column: 2/4;
-    margin-bottom: 250px;
+    position: relative;
+    padding-bottom: 70vh;
 
     .main__subsection__ul {
         grid-column: 2/3;
         display: flex;
+        top: 50px;
         position: absolute;
-        width: 100%;
-        margin-right: 20px;
-        background-color: 300px;
-        flex-wrap: nowrap;
+        max-width: 100%;
         overflow-x: auto;
-        margin-top: 60px;
         gap: 20px;
     }
 
@@ -22,12 +20,11 @@
         position: relative;
         flex-direction: column;
         gap: 20px;
-        min-width: 350px;
-        max-height: 350px;
+        min-width: 300px;
+        height: 300px;
         flex: 1;
-        margin-right: 20px;
         margin-bottom: 40px;
-        border: $white 10px solid;
+        border: $white 0.5rem solid;
         overflow: hidden;
     }
 
