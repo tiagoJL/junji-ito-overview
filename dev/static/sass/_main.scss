@@ -48,12 +48,16 @@
     }
 
     &__title {
-        scroll-margin-top: 234px;
+        scroll-margin-top: 195px;
         grid-column: 2/4;
         grid-row: 1/2;
         color: $color-title;
         margin-top: 60px;
         font-size: 1.6rem;
+
+        @include mobile(800px) {
+            scroll-margin-top: 234px;
+        }
 
         .secondery-background-color & {
             color: $color-title-in-secondary-background;
