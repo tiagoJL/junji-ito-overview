@@ -3,8 +3,6 @@
         position: relative;
         justify-content: center;
         justify-items: start;
-        // padding-bottom: 90px;
-        // min-height: 600px;
     }
 
     &__section__first_div {
@@ -19,7 +17,6 @@
         position: absolute;
         grid-row: 2/3;
         grid-column: 3/4;
-        height: 100%;
         @include mobile(800px) {
             position: relative;
             grid-row: 3/4;
@@ -51,7 +48,7 @@
     }
 
     &__title {
-        scroll-margin-top: 175px;
+        scroll-margin-top: 234px;
         grid-column: 2/4;
         grid-row: 1/2;
         color: $color-title;
@@ -84,24 +81,35 @@
 
     .uzumaki_work, .tomie_work, .gyo_work {
         opacity: 0;
-        left: 0px;
-        transform: scale(0) translate(100%);
-        transition-duration: 0.7s;
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: scale(0) translate(-10%);
+        transition-duration: 0.8s;
         transition-property: opacity transform;
     }
 
     #uzumaki_work:checked ~ .uzumaki_work {
         opacity: 1;
+        top: 0;
+        left: 0;
+        position: relative;
         transform: scale(1) translate(0);
     }
 
     #tomie_work:checked ~ .tomie_work {
         opacity: 1;
+        top: 0;
+        left: 0;
+        position: relative;
         transform: scale(1) translate(0);
     }
 
     #gyo_work:checked ~ .gyo_work {
         opacity: 1;
+        top: 0;
+        left: 0;
+        position: relative;
         transform: scale(1) translate(0);
     }
 
